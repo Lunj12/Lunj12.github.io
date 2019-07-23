@@ -35,3 +35,16 @@ $$ f(x) = \beta_0 + \sum_{j=1}^{m} X_j \beta_j$$
 
 ## Supporing Vector Machine
 
+Use a hyperplane to separate two classes. The hyperplane:
+$$ x^T \beta + \beta_0 = 0$$
+$\beta$ is scaled to satisfy the canonical representation: if $x^*$ is the closet point to the hyperplane, a.k.a $x$ is a on boundary:
+$$ |{x^*}^T \beta + \beta_0| = 1$$
+The distance from a boundary to the separating hyperplane is:
+$$ M = \frac{1}{\lVert\beta\rVert}$$
+
+### Hard Margin SVM ###
+
+Hard margin SVM works only when the two classes are completely linearly separable. The problem of hard margin SVM is find the biggest margin $M$ for separation, equivalent to solve:
+$$ \max_{\beta, \beta_0, \lVert\beta\rVert} M \Rightarrow \min_{\beta, \beta_0, \lVert\beta\rVert} \frac{1}{\lVert\beta\rVert}$$
+subject to $$ y_i(x_i^T\beta + \beta) \geq 1, \forall i$$
+The physical meaning of the above system of inequalities is maximize the margin while keeping all points classified beyond boundaries of prediction $\{+1, -1\}$, a.k.a, giving $+1$ labeled data a prediction $\geq 1$, and giving $-1$ labeled data a prediction $\leq -1$.
