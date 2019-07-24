@@ -1,5 +1,7 @@
 ---
 layout: post
+mathjax: true
+comments: true
 title:  "Mathematical Basics of Linear Regression and SVM"
 date:   2019-07-23 20:13:07 -0700
 categories: blog posts

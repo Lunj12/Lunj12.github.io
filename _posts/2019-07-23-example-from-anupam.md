@@ -1,5 +1,7 @@
 ---
 layout: post
+mathjax: true
+comments: true
 title: Stochastic Gradient Descent
 tags: ml
 ---
