@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Machine Learning Basics: Linear Regression and SVM"
+title:  "Mathematical Basics of Linear Regression and SVM"
 date:   2019-07-23 20:13:07 -0700
 categories: blog posts
 ---
-
-# Mathematical Basics of Linear Regression and SVM
 
 **Linear Regression** and **Supporting Vector Machine (SVM)** are two common supervised learning techniques.  
 The purpose of this post is to make a minimal review of these two methods.
