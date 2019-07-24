@@ -27,6 +27,7 @@ github_username:  Lunj12
 cayman-blog:
   date_format: "%b %-d, %Y"
 
+show_downloads: true
 theme: # leave it empty
 
 author: "Lun Jiang"
