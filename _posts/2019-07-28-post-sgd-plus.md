@@ -58,4 +58,4 @@ The principal difference between SGD with momentum and NAG is that NAG calculate
 
 [1] *An overview of gradient descent optimization algorithms*: http://ruder.io/optimizing-gradient-descent/index.html#nesterovacceleratedgradient
 
-[2] *Understanding Nesterov Momentum (NAG)* https://dominikschmidt.xyz/nesterov-momentum/
+[2] *Understanding Nesterov Momentum (NAG)*: https://dominikschmidt.xyz/nesterov-momentum/
