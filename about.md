@@ -1,15 +1,17 @@
 ---
 layout: page
-title: About
+title: Lun Jiang
 permalink: /about/
 ---
 
-Some information about you!
+> "Never forget what you are, for surely the world will not. Make it your strength. Then it can never be your weakness. Armour yourself in it, and it will never be used to hurt you."
+> 
+> -- From the wisest dwarf in the world.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am currently working as a data scientist and machine learning enginner in tech. I keep exploring and exploiting, towards latent physical and mental domains beneath the visible euclidean space.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jiangl.science@outlook.com](mailto:jiangl.science@outlook.com)
