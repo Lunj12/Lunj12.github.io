@@ -33,11 +33,13 @@ The above behavior is due to the rapidly changing direction between two steps of
 The implementation is:
 
 $$ v_{t} = \gamma v_{t-1} + \eta \cdot \nabla_{\theta_{t-1}} J(\theta_{t-1})$$
+
 $$ \theta_t = \theta_{t-1} - v_{t}$$
 
 Or equivalently,
 
 $$ v_{t} = \beta v_{t-1} + (1 - \beta) \cdot \nabla_{\theta_{t-1}} J(\theta_{t-1})$$
+
 $$ \theta_t = \theta_{t-1} - \alpha v_{t}$$
 
 where $\alpha \beta = \gamma$ and $\alpha (1-\beta) = \eta$.
@@ -47,6 +49,7 @@ where $\alpha \beta = \gamma$ and $\alpha (1-\beta) = \eta$.
 An improvement of SGD with Momentum to further damp unnecessary oscillations is Nestrov Accelerated Gradient (NAG):
 
 $$ v_{t} = \gamma v_{t-1} + \eta \cdot \nabla_{\theta_{t-1}} J(\theta_{t-1} - \gamma v_{t-1})$$
+
 $$ \theta_t = \theta_{t-1} - v_{t}$$
 
 The principal difference between SGD with momentum and NAG is that NAG calculates gradient based on an **indicator** ($\theta_{t-1} - \gamma v_{t-1}$), rather than the true position $\theta_{t-1}$. In each step, we first obtain a prescience of the position where $\theta$ would go if following the old momentum $v_{t-1}$, then calculate gradient based on this prescience (indicator), and add this term as an correction vector to the old momentum vector.
