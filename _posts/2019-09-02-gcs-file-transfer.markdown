@@ -5,11 +5,11 @@ date:   2019-09-02 16:02:16 -0700
 categories: blog posts
 ---
 
-When using Google Cloud clusters for computation, we often need to transfer files between compute engine and Google Cloud Storage (GCS) buckets.
+When using Google Cloud clusters for computation, we often need to transfer files between compute engines and Google Cloud Storage (GCS) buckets.
 
-In Python, The official API `google.cloud.storage` gives solution by using `client`, `bucket` and `blob`, because each single file in GCS is considered as a blob. The exact code to transfer files between machines and GCS is less convenient, especially when transfering an entire directory.
+In Python, the official API `google.cloud.storage` gives a solution by using `client`, `bucket` and `blob`, because each single file in GCS is considered as a blob. The official modules to transfer files between machines and GCS are less straightforward and convenient, especially when transfering an entire directory.
 
-In this pot, Python functions are provided for easily tranfering files between local unix-based machine and GCS.
+In this post, Python functions are provided for easily tranfering files between local unix-based machines and GCS.
 
 ### Category
 ```
